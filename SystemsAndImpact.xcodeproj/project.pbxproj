@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93026C5628DA0088000BF1D0 /* Computingimpact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5528DA0088000BF1D0 /* Computingimpact.swift */; };
+		93026C5628DA0088000BF1D0 /* ComputingImpact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5528DA0088000BF1D0 /* ComputingImpact.swift */; };
 		93026C5828DA020E000BF1D0 /* ImpactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5728DA020E000BF1D0 /* ImpactData.swift */; };
 		938D48EF28D4BC60003E9CAA /* SystemsAndImpactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48EE28D4BC60003E9CAA /* SystemsAndImpactApp.swift */; };
 		938D48F128D4BC60003E9CAA /* SystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48F028D4BC60003E9CAA /* SystemView.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93026C5528DA0088000BF1D0 /* Computingimpact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computingimpact.swift; sourceTree = "<group>"; };
+		93026C5528DA0088000BF1D0 /* ComputingImpact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputingImpact.swift; sourceTree = "<group>"; };
 		93026C5728DA020E000BF1D0 /* ImpactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactData.swift; sourceTree = "<group>"; };
 		938D48EB28D4BC60003E9CAA /* SystemsAndImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemsAndImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938D48EE28D4BC60003E9CAA /* SystemsAndImpactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsAndImpactApp.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		93026C5428DA0059000BF1D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				93026C5528DA0088000BF1D0 /* Computingimpact.swift */,
+				93026C5528DA0088000BF1D0 /* ComputingImpact.swift */,
 				93026C5728DA020E000BF1D0 /* ImpactData.swift */,
 			);
 			path = Model;
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				938D48F128D4BC60003E9CAA /* SystemView.swift in Sources */,
-				93026C5628DA0088000BF1D0 /* Computingimpact.swift in Sources */,
+				93026C5628DA0088000BF1D0 /* ComputingImpact.swift in Sources */,
 				938D48EF28D4BC60003E9CAA /* SystemsAndImpactApp.swift in Sources */,
 				93026C5828DA020E000BF1D0 /* ImpactData.swift in Sources */,
 			);

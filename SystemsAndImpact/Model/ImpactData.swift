@@ -7,6 +7,8 @@
 
 import MapKit
 
+let definitions = Bundle.main.url(forResource: "Placeholder", withExtension: "pdf")!
+
 func loadImpactData() -> [ComputingImpact]
 
 {
@@ -17,14 +19,14 @@ func loadImpactData() -> [ComputingImpact]
     [
         CLLocationCoordinate2D(latitude: 36.7783, longitude:119.4179),
         CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
-        CLLocationCoordinate2D(latitude: 35.7783, longitude:112.4179),
-        CLLocationCoordinate2D(latitude: 31.7783, longitude:133.4179),
-        CLLocationCoordinate2D(latitude: 33.7783, longitude:89.4179)
+        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
+        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
+        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
     ]
     
     let details : [String] =
     [
-        "First item details",
+        "Because there is a plethora of tech devices being wasted, a company in CA decided to embark on a journey to solve this issue. because even after the state of CA passed the recycling act, the e-waste has been piling up.",
         "then te next",
         "and so on",
         "keep going",
@@ -33,12 +35,19 @@ func loadImpactData() -> [ComputingImpact]
     
     let titles : [String] =
     [
-    "Title",
+    "E-Waste management",
     "for each",
     "of ",
     " ",
     " ",
 
     ]
+    
+    for index in 0 ..< 5
+    {
+        let currentRegion = MKCoordinateRegion (center: regions [index],
+                                                span: (MKCoordinateSpan(latitudeDelta:10, longitudeDelta: 10)))
+        impactItems.append(ComputingImpact(title: titles[index], details: details[index], location: currentRegion))
+    }
     return impactItems
 }

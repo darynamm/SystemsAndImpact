@@ -7,7 +7,7 @@
 
 import MapKit
 
-struct ComptingImpact : Identifiable 
+struct ComputingImpact : Identifiable 
 {
     let id = UUID()
     let title : String
