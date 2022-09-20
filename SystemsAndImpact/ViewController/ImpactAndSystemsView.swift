@@ -12,10 +12,29 @@ struct ImpactAndSystemsView: View
     let impacts = loadImpactData()
     var body: some View
     {
-        Text("Hello, world!")
-            .padding()
+        NavigationView
+        {
+            List
+            {
+                Section(header: Text("Impacts of computing!"))
+                {
+                    ForEach(impacts.indices)
+                    {
+                        index in
+                        NavigationLink(impacts[index].title, destination: ImpactDetailView(impact: impacts[index]))
+                    }
+                }
+                Section(header: Text("Systems"))
+                {
+                    Text("Also calling sooonnnnn")
+                }
+                
+            }
+        }
     }
 }
+
+
 
 struct ImpactAndSystemsView_Previews: PreviewProvider
 {

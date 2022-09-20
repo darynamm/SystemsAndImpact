@@ -13,19 +13,11 @@ struct ImpactDetailView: View
     @State var impact : ComputingImpact
     var body: some View
     {
-NavigationView
+        VStack
         {
-            List
-            {
-                Section(header: Text("Impacts"))
-                {
-                    Text("Coming soon!")
-                }
-                Section(header: Text("Systems"))
-                {
-                    Text("Also calling sooonnnnn")
-                }
-            }
+            Map(coordinateRegion: $impact.location)
+                .frame(height:400)
+            Text(impact.details)
         }
     }
 }
