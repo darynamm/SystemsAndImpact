@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		93026C5628DA0088000BF1D0 /* ComputingImpact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5528DA0088000BF1D0 /* ComputingImpact.swift */; };
 		93026C5828DA020E000BF1D0 /* ImpactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5728DA020E000BF1D0 /* ImpactData.swift */; };
+		93026C5B28DA0988000BF1D0 /* ImpactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5A28DA0988000BF1D0 /* ImpactDetailView.swift */; };
 		938D48EF28D4BC60003E9CAA /* SystemsAndImpactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48EE28D4BC60003E9CAA /* SystemsAndImpactApp.swift */; };
-		938D48F128D4BC60003E9CAA /* SystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48F028D4BC60003E9CAA /* SystemView.swift */; };
+		938D48F128D4BC60003E9CAA /* ImpactAndSystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48F028D4BC60003E9CAA /* ImpactAndSystemsView.swift */; };
 		938D48F328D4BC61003E9CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938D48F228D4BC61003E9CAA /* Assets.xcassets */; };
 		938D48F628D4BC61003E9CAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938D48F528D4BC61003E9CAA /* Preview Assets.xcassets */; };
 		938D490028D4BC62003E9CAA /* SystemsAndImpactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48FF28D4BC62003E9CAA /* SystemsAndImpactTests.swift */; };
@@ -38,9 +39,10 @@
 /* Begin PBXFileReference section */
 		93026C5528DA0088000BF1D0 /* ComputingImpact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputingImpact.swift; sourceTree = "<group>"; };
 		93026C5728DA020E000BF1D0 /* ImpactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactData.swift; sourceTree = "<group>"; };
+		93026C5A28DA0988000BF1D0 /* ImpactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactDetailView.swift; sourceTree = "<group>"; };
 		938D48EB28D4BC60003E9CAA /* SystemsAndImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemsAndImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938D48EE28D4BC60003E9CAA /* SystemsAndImpactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsAndImpactApp.swift; sourceTree = "<group>"; };
-		938D48F028D4BC60003E9CAA /* SystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemView.swift; sourceTree = "<group>"; };
+		938D48F028D4BC60003E9CAA /* ImpactAndSystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactAndSystemsView.swift; sourceTree = "<group>"; };
 		938D48F228D4BC61003E9CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		938D48F528D4BC61003E9CAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		938D48FB28D4BC62003E9CAA /* SystemsAndImpactTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SystemsAndImpactTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		93026C5928DA093D000BF1D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				938D48F028D4BC60003E9CAA /* ImpactAndSystemsView.swift */,
+				93026C5A28DA0988000BF1D0 /* ImpactDetailView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		938D48E228D4BC60003E9CAA = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +129,7 @@
 			children = (
 				93026C5428DA0059000BF1D0 /* Model */,
 				93026C5228DA0009000BF1D0 /* Resources */,
-				938D48F028D4BC60003E9CAA /* SystemView.swift */,
+				93026C5928DA093D000BF1D0 /* ViewController */,
 				938D48F428D4BC61003E9CAA /* Preview Content */,
 			);
 			path = SystemsAndImpact;
@@ -279,9 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938D48F128D4BC60003E9CAA /* SystemView.swift in Sources */,
+				938D48F128D4BC60003E9CAA /* ImpactAndSystemsView.swift in Sources */,
 				93026C5628DA0088000BF1D0 /* ComputingImpact.swift in Sources */,
 				938D48EF28D4BC60003E9CAA /* SystemsAndImpactApp.swift in Sources */,
+				93026C5B28DA0988000BF1D0 /* ImpactDetailView.swift in Sources */,
 				93026C5828DA020E000BF1D0 /* ImpactData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

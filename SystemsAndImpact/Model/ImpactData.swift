@@ -17,11 +17,11 @@ func loadImpactData() -> [ComputingImpact]
     let regions : [CLLocationCoordinate2D] =
     
     [
-        CLLocationCoordinate2D(latitude: 36.7783, longitude:119.4179),
-        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
-        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
-        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
-        CLLocationCoordinate2D(latitude: 39.7783, longitude:116.4179),
+        CLLocationCoordinate2D(latitude: 36.7783, longitude: -119.4179),
+        CLLocationCoordinate2D(latitude: 39.7783, longitude: 116.4179),
+        CLLocationCoordinate2D(latitude: 39.7783, longitude: -116.4179),
+        CLLocationCoordinate2D(latitude: 39.7783, longitude: 116.4179),
+        CLLocationCoordinate2D(latitude: 39.7783, longitude: 116.4179),
     ]
     
     let details : [String] =

@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct SystemView: View
+struct ImpactAndSystemsView: View
 {
+    let impacts = loadImpactData()
     var body: some View
     {
         Text("Hello, world!")
@@ -16,10 +17,10 @@ struct SystemView: View
     }
 }
 
-struct ContentView_Previews: PreviewProvider
+struct ImpactAndSystemsView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        SystemView()
+        ImpactAndSystemsView()
     }
 }
