@@ -18,10 +18,11 @@ struct ImpactAndSystemsView: View
             {
                 Section(header: Text("Impacts of computing!"))
                 {
-                    ForEach(impacts.indices)
+                    ForEach(impacts.indices, id: \.self)
                     {
                         index in
                         NavigationLink(impacts[index].title, destination: ImpactDetailView(impact: impacts[index]))
+                            .accessibilityLabel("Link to ImpactDetailView for \(impacts[index].title)")
                     }
                 }
                 Section(header: Text("Systems"))
