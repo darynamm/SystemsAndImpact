@@ -10,7 +10,14 @@ import MapKit
 
 struct ImpactDetailView: View
 {
-    @State var impact : ComputingImpact
+    @State private var impact : ComputingImpact
+    private var mapItems : [ComputingImpact]
+    
+    init (with impact : ComputingImpact)
+    {
+        _impact = State(initialValue : impact)
+        
+    }
     var body: some View
     {
         VStack
@@ -26,6 +33,6 @@ struct ImpactDetailView_Previews: PreviewProvider
 {
     static var previews: some View
     {
-        ImpactDetailView(impact: loadImpactData()[0])
+        ImpactDetailView(with: loadImpactData()[0])
     }
 }

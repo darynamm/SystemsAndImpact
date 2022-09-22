@@ -22,7 +22,7 @@ struct ImpactAndSystemsView: View
                     {
                         impact in
                         
-                        NavigationLink(impact.title, destination: ImpactDetailView(impact: impact))
+                        NavigationLink(impact.title, destination: ImpactDetailView(with: impact))
                             .accessibilityLabel("Link to ImpactDetailView for \(impact.title)")
                     }
                 }
