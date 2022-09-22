@@ -11,6 +11,7 @@
 		93026C5828DA020E000BF1D0 /* ImpactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5728DA020E000BF1D0 /* ImpactData.swift */; };
 		93026C5B28DA0988000BF1D0 /* ImpactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93026C5A28DA0988000BF1D0 /* ImpactDetailView.swift */; };
 		93057A1E28DC9F3900659057 /* ComputingSystemsPDF.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 93057A1D28DC9F3900659057 /* ComputingSystemsPDF.pdf */; };
+		93057A2028DCA03100659057 /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93057A1F28DCA03100659057 /* PDFKitView.swift */; };
 		938D48EF28D4BC60003E9CAA /* SystemsAndImpactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48EE28D4BC60003E9CAA /* SystemsAndImpactApp.swift */; };
 		938D48F128D4BC60003E9CAA /* ImpactAndSystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938D48F028D4BC60003E9CAA /* ImpactAndSystemsView.swift */; };
 		938D48F328D4BC61003E9CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938D48F228D4BC61003E9CAA /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		93026C5728DA020E000BF1D0 /* ImpactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactData.swift; sourceTree = "<group>"; };
 		93026C5A28DA0988000BF1D0 /* ImpactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactDetailView.swift; sourceTree = "<group>"; };
 		93057A1D28DC9F3900659057 /* ComputingSystemsPDF.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ComputingSystemsPDF.pdf; sourceTree = "<group>"; };
+		93057A1F28DCA03100659057 /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		938D48EB28D4BC60003E9CAA /* SystemsAndImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemsAndImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938D48EE28D4BC60003E9CAA /* SystemsAndImpactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsAndImpactApp.swift; sourceTree = "<group>"; };
 		938D48F028D4BC60003E9CAA /* ImpactAndSystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactAndSystemsView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				938D48F028D4BC60003E9CAA /* ImpactAndSystemsView.swift */,
 				93026C5A28DA0988000BF1D0 /* ImpactDetailView.swift */,
+				93057A1F28DCA03100659057 /* PDFKitView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93057A2028DCA03100659057 /* PDFKitView.swift in Sources */,
 				938D48F128D4BC60003E9CAA /* ImpactAndSystemsView.swift in Sources */,
 				93026C5628DA0088000BF1D0 /* ComputingImpact.swift in Sources */,
 				938D48EF28D4BC60003E9CAA /* SystemsAndImpactApp.swift in Sources */,
