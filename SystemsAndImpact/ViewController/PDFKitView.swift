@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PDFKit
 
 struct PDFKitView: View
 {
@@ -15,6 +16,25 @@ struct PDFKitView: View
     }
 }
 
+
+struct PDFKitRepresentedView : UIViewRepresentable
+{
+    
+    let url : URL
+    init (url : URL)
+    {
+        self.url = url
+    }
+    func makeUIView(context: Context) -> some UIView
+    {
+        let pdfView : PDFView = PDFView()
+        pdfView.document = PDFDocument(url: self.url)
+        pdfView.autoScales = true
+        pdfView.displayDirection = .vertical
+        
+        return pdfView
+    }
+}
 struct PDFKitView_Previews: PreviewProvider
 {
     static var previews: some View
