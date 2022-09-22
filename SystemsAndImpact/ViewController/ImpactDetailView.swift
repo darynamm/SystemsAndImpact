@@ -15,16 +15,35 @@ struct ImpactDetailView: View
     
     init (with impact : ComputingImpact)
     {
-        _impact = State(initialValue : impact)
-        
+        _impact = State(initialValue: impact)
+        self.mapItems = [ctecLocation, impact]
     }
+    
     var body: some View
     {
         VStack
         {
-            Map(coordinateRegion: $impact.location)
+            Text(impact.title)
+                .accessibilityLabel("Title of impact")
+                .accessibilityValue(impact.title)
+            Map(coordinateRegion: $impact.location, annotationItems: mapItems)
+            {
+                pin in
+                MapMarker(coordinate: pin.location.center, tint: .purple)
+            }
+            .onAppear
+            {
+                withAnimation
+                {
+                    impact.location.span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 1.5)
+                }
+            }
+            .accessibilityLabel("Map of region")
+            .accessibilityValue("Map of: latitude: \(impact.location.center.latitude) longitude: \(impact.location.center.longitude)")
                 .frame(height:400)
             Text(impact.details)
+                .accessibilityLabel("Details of computing impact")
+                .accessibilityValue(impact.details)
         }
     }
 }

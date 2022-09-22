@@ -28,7 +28,7 @@ struct ImpactAndSystemsView: View
                 }
                 Section(header: Text("Systems"))
                 {
-                    Text("Also calling sooonnnnn")
+                    NavigationLink("Computing Definitions Brochure", destination: PDFKitView())
                 }
                 
             }
