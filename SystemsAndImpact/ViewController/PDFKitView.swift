@@ -34,6 +34,11 @@ struct PDFKitRepresentedView : UIViewRepresentable
         
         return pdfView
     }
+    
+    func updateUIView(_ uiView : UIViewType, context : Context) -> Void
+    {
+        //do not put any code in here
+    }
 }
 struct PDFKitView_Previews: PreviewProvider
 {
