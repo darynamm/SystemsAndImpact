@@ -13,7 +13,8 @@ struct PDFKitView: View
     var body: some View
     {
         PDFKitRepresentedView(url: definitionsBrochure)
-     
+            .accessibilityLabel("Loads a PDF Brochure")
+            .accessibilityValue("PDF from internal URL")
     }
 }
 

@@ -10,6 +10,7 @@ import MapKit
 
 struct ImpactDetailView: View
 {
+    
     @State private var impact : ComputingImpact
     private var mapItems : [ComputingImpact]
     
